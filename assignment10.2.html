@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class airplane {
+			constructor(name, occupancy, speed){
+				this.name = name,
+				this.occupancy = occupancy,
+				this.speed = speed,
+				//increase or decrease speed
+				this.inSpeed = function(){
+					this.speed += 200
+				}
+			}
+			//method
+			getStatus(){
+				return 'Ariplane: ' + this.name + ' with ' + this.occupancy + ' occupancy' + ', ' + 'is moving at ' + this.speed;
+			}
+			
+		}
+		let USAAirplane = new airplane('Boing 777', 180, 900);
+		console.log(USAAirplane.getStatus());
+		console.log(USAAirplane.inSpeed());
+		
+		
+	</script>
+</body>
+</html>
